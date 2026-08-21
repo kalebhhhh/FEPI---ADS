@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADS · FEPI — Tecnólogo em Análise e Desenvolvimento de Sistemas</title>
+<link rel="icon" type="image/png" href="assets/icons/d7c-2021-11-24-11-09-01.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="FEPI ADS - início">
+      <img id="brandLogo" src="assets/icons/Logotipo-FEPI.webp" alt="FEPI">
+      <span class="logo-divider" aria-hidden="true">/</span>
+      <span>ADS</span>
+    </a>
+    <nav id="mainNav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#metodologia">Metodologia</a></li>
+        <li><a href="#mercado">Mercado</a></li>
+        <li><a href="#estrutura">Estrutura</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="settings-anchor">
+      <button class="settings-btn" id="settingsBtn" aria-haspopup="true" aria-expanded="false" aria-label="Configurações">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="12" cy="12" r="3.2"/>
+          <path d="M19.4 12.9v-1.8l-1.9-.4a6.6 6.6 0 0 0-.6-1.5l1.1-1.6-1.3-1.3-1.6 1.1a6.6 6.6 0 0 0-1.5-.6l-.4-1.9H11l-.4 1.9a6.6 6.6 0 0 0-1.5.6L7.5 6.3 6.2 7.6l1.1 1.6a6.6 6.6 0 0 0-.6 1.5l-1.9.4v1.8l1.9.4c.13.53.34 1.03.6 1.5l-1.1 1.6 1.3 1.3 1.6-1.1c.47.26.97.47 1.5.6l.4 1.9h1.8l.4-1.9c.53-.13 1.03-.34 1.5-.6l1.6 1.1 1.3-1.3-1.1-1.6c.26-.47.47-.97.6-1.5l1.9-.4Z"/>
+        </svg>
+      </button>
+      <div class="settings-panel" id="settingsPanel" role="menu">
+        <p class="settings-title">Aparência</p>
+        <div class="theme-row">
+          <span id="themeLabel">Tema escuro</span>
+          <button class="theme-switch" id="themeSwitch" role="switch" aria-checked="false" aria-label="Alternar tema claro/escuro">
+            <span class="knob"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+ 
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow scramble-label">Centro Universitário de Itajubá</p>
+      <h1 class="hero-title font-display">Analise, projete<br>e construa <span class="accent">sistemas</span> reais.</h1>
+      <div class="sheet final-panel hero-cta-panel reveal"><span class="crop-bl"></span><span class="crop-br"></span>
+        <div>
+          <p class="eyebrow scramble-label">Próximo passo</p>
+          <h2 class="font-display">Sua vaga na formação em<br>sistemas começa aqui.</h2>
+          <p>Cadastre seu interesse e receba uma notificação quando o processo seletivo abrir.</p>
+        </div>
+        <div class="final-actions">
+          <a href="https://fepi.apprbs.com.br/processo/2/lista" class="btn" target="_blank" rel="noopener noreferrer"><span>Cadastrar meu interesse</span></a>
+          <a href="https://fepi.br/cursos/graduacao/analise-desenvolvimento-sistemas/" class="btn-ghost" target="_blank" rel="noopener noreferrer">Falar com a coordenação ↗</a>
+        </div>
+      </div>
+      <p class="hero-desc">ADS na FEPI: formação presencial e prática para sair da faculdade programando, testando e implantando software.</p>
+      <div class="facts-strip">
+        <div class="fact"><div class="num font-display">5</div><div class="lbl">Períodos</div></div>
+        <div class="fact"><div class="num font-display">Presencial</div><div class="lbl">Modalidade</div></div>
+        <div class="fact"><div class="num font-display">Itajubá/MG</div><div class="lbl">Campus</div></div>
+      </div>
+    </div>
+ 
+    <div class="sheet schema"><span class="crop-bl"></span><span class="crop-br"></span>
+      <div class="schema-label"><span>diagrama_01.svg</span><span>trilha de formação<span class="cursor-blink">_</span></span></div>
+      <svg viewBox="0 0 460 380" xmlns="http://www.w3.org/2000/svg">
+        <path class="node-line delay1" d="M70 60 L70 140" />
+        <path class="node-line delay2" d="M70 140 L230 140" />
+        <path class="node-line delay2" d="M230 140 L230 220" />
+        <path class="node-line delay3" d="M230 220 L390 220" />
+        <path class="node-line delay3" d="M390 220 L390 300" />
+        <path class="node-line delay4" d="M70 140 L70 300 L390 300" />
+ 
+        <circle class="node-circle d0" cx="70" cy="60" r="26"/>
+        <text class="node-text d0" x="70" y="64" text-anchor="middle">LÓGICA</text>
+ 
+        <circle class="node-circle d1" cx="70" cy="140" r="26"/>
+        <text class="node-text d1" x="70" y="144" text-anchor="middle">DADOS</text>
+ 
+        <circle class="node-circle d2" cx="230" cy="140" r="26"/>
+        <text class="node-text d2" x="230" y="144" text-anchor="middle">WEB</text>
+ 
+        <circle class="node-circle d2" cx="230" cy="220" r="26"/>
+        <text class="node-text d2" x="230" y="224" text-anchor="middle">BANCO</text>
+ 
+        <circle class="node-circle d3" cx="390" cy="220" r="26"/>
+        <text class="node-text d3" x="390" y="217" text-anchor="middle" font-size="8">ENG.</text>
+        <text class="node-text d3" x="390" y="227" text-anchor="middle" font-size="8">SOFTWARE</text>
+ 
+        <circle class="node-circle d4" cx="390" cy="300" r="30" stroke="#5fd9c8"/>
+        <text class="node-text d4" x="390" y="297" text-anchor="middle" fill="#5fd9c8" font-size="8">MERCADO</text>
+        <text class="node-text d4" x="390" y="307" text-anchor="middle" fill="#5fd9c8" font-size="8">DE TRABALHO</text>
+      </svg>
+    </div>
+  </div>
+</section>
+ 
+<section id="sobre">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow scramble-label">Sobre o curso</p>
+      <h2 class="section-title font-display">Um curso pensado para quem vai <span class="accent">construir</span> software, não só estudar sobre ele.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>O objetivo do curso é formar o profissional <strong>Analista e Desenvolvedor de Sistemas</strong>, capacitado a identificar demandas da sociedade e propor soluções informatizadas — da concepção ao código em produção.</p>
+        <p>Ao longo da graduação você vai <strong>analisar, projetar, desenvolver, testar, implantar e manter</strong> sistemas computacionais, avaliando e aplicando metodologias, tecnologias e ferramentas da engenharia de software.</p>
+        <p>É um curso superior de tecnologia <strong>presencial</strong>, com duração de <strong>2 anos e meio</strong>, no período <strong>noturno</strong> e com 50 vagas. A formação concentra prática nas linguagens, frameworks e bancos de dados usados pelo mercado de TI.</p>
+      </div>
+      <div class="sheet stack-panel reveal"><span class="crop-bl"></span><span class="crop-br"></span>
+        <p class="stack-title">Tecnologias trabalhadas em sala</p>
+        <div class="stack-list">
+          <span class="stack-item">Java</span>
+          <span class="stack-item">.NET</span>
+          <span class="stack-item">Python</span>
+          <span class="stack-item">SQL</span>
+          <span class="stack-item">HTML/CSS</span>
+          <span class="stack-item">JavaScript</span>
+          <span class="stack-item">UML</span>
+          <span class="stack-item">Git</span>
+          <span class="stack-item">Scrum</span>
+          <span class="stack-item">Kanban</span>
+          <span class="stack-item">APIs REST</span>
+          <span class="stack-item">Mobile</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="course-details">
+  <div class="wrap">
+    <div class="details-grid">
+      <div class="detail-item"><span class="detail-label">Modalidade</span><strong>Presencial</strong></div>
+      <div class="detail-item"><span class="detail-label">Duração</span><strong>2 anos e meio</strong></div>
+      <div class="detail-item"><span class="detail-label">Turno</span><strong>Noturno</strong></div>
+      <div class="detail-item"><span class="detail-label">Vagas</span><strong>50</strong></div>
+    </div>
+    <div class="official-link reveal">
+      <div>
+        <p class="eyebrow scramble-label">Informações oficiais</p>
+        <h2 class="section-title font-display">Veja a grade curricular e conheça o curso em detalhes.</h2>
+        <p>Consulte o corpo docente, o plano curricular e outras informações diretamente no site oficial da FEPI.</p>
+      </div>
+      <a href="https://fepi.br/cursos/graduacao/analise-desenvolvimento-sistemas/" class="btn-ghost" target="_blank" rel="noopener noreferrer">Conhecer o curso na FEPI <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+ 
+<section id="formacao">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow scramble-label">Trilha de formação</p>
+      <h2 class="section-title font-display">Do primeiro <span class="accent">algoritmo</span> ao sistema em produção.</h2>
+    </div>
+    <div class="track">
+      <div class="track-item reveal">
+        <div class="track-num font-display">01</div>
+        <div class="track-body">
+          <h3>Fundamentos de lógica e programação</h3>
+          <p>Raciocínio lógico, algoritmos e as primeiras linhas de código — a base que sustenta todo o resto do curso.</p>
+          <div class="track-tags"><span class="track-tag">Lógica</span><span class="track-tag">Algoritmos</span><span class="track-tag">Matemática discreta</span></div>
+        </div>
+      </div>
+      <div class="track-item reveal">
+        <div class="track-num font-display">02</div>
+        <div class="track-body">
+          <h3>Estruturas de dados e banco de dados</h3>
+          <p>Como organizar, armazenar e consultar informação com eficiência — do vetor ao modelo relacional.</p>
+          <div class="track-tags"><span class="track-tag">Estruturas de dados</span><span class="track-tag">SQL</span><span class="track-tag">Modelagem</span></div>
+        </div>
+      </div>
+      <div class="track-item reveal">
+        <div class="track-num font-display">03</div>
+        <div class="track-body">
+          <h3>Desenvolvimento web e mobile</h3>
+          <p>Construção de interfaces e aplicações completas, do front-end ao back-end, com frameworks usados pelo mercado.</p>
+          <div class="track-tags"><span class="track-tag">Front-end</span><span class="track-tag">Back-end</span><span class="track-tag">APIs</span></div>
+        </div>
+      </div>
+      <div class="track-item reveal">
+        <div class="track-num font-display">04</div>
+        <div class="track-body">
+          <h3>Engenharia de software</h3>
+          <p>Análise de requisitos, arquitetura, testes e qualidade — o processo que transforma código em sistema confiável.</p>
+          <div class="track-tags"><span class="track-tag">UML</span><span class="track-tag">Testes</span><span class="track-tag">Arquitetura</span></div>
+        </div>
+      </div>
+      <div class="track-item reveal">
+        <div class="track-num font-display">05</div>
+        <div class="track-body">
+          <h3>Projeto integrador e mercado</h3>
+          <p>Desenvolvimento de um sistema completo, do zero à implantação, aplicando metodologias ágeis em equipe.</p>
+          <div class="track-tags"><span class="track-tag">Scrum</span><span class="track-tag">Projeto real</span><span class="track-tag">Portfólio</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section id="metodologia">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow scramble-label">Metodologia</p>
+      <h2 class="section-title font-display">Aprender fazendo, <span class="accent">não decorando</span>.</h2>
+    </div>
+    <div class="method-grid">
+      <div class="sheet method-card reveal"><span class="crop-bl"></span><span class="crop-br"></span>
+        <div class="method-icon">A</div>
+        <h3>Metodologias ativas</h3>
+        <p>Aulas centradas em prática e resolução de problemas reais, não em aulas puramente expositivas.</p>
+      </div>
+      <div class="sheet method-card reveal"><span class="crop-bl"></span><span class="crop-br"></span>
+        <div class="method-icon">S</div>
+        <h3>Scrum e Kanban</h3>
+        <p>Projetos conduzidos com metodologias ágeis, do backlog à entrega — como em um time de produto real.</p>
+      </div>
+      <div class="sheet method-card reveal"><span class="crop-bl"></span><span class="crop-br"></span>
+        <div class="method-icon">P</div>
+        <h3>Projetos reais</h3>
+        <p>Sistemas, aplicativos e soluções corporativas desenvolvidos em equipe ao longo de todo o curso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section id="mercado">
+  <div class="wrap">
+    <div class="market">
+      <div class="reveal">
+        <p class="eyebrow scramble-label">Mercado de trabalho</p>
+        <p class="market-quote">"TI está, há anos, entre os setores que mais oferecem vagas — e a carência de profissionais especializados segue grande."</p>
+      </div>
+      <div class="reveal">
+        <div class="role-list">
+          <div class="role-item"><span>Desenvolvedor de software</span><span class="arrow">→</span></div>
+          <div class="role-item"><span>Analista de sistemas</span><span class="arrow">→</span></div>
+          <div class="role-item"><span>Desenvolvedor web e mobile</span><span class="arrow">→</span></div>
+          <div class="role-item"><span>Administrador de banco de dados</span><span class="arrow">→</span></div>
+          <div class="role-item"><span>Analista de suporte e infraestrutura</span><span class="arrow">→</span></div>
+          <div class="role-item"><span>Gestor de projetos de TI</span><span class="arrow">→</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section id="estrutura">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow scramble-label">Estrutura FEPI</p>
+      <h2 class="section-title font-display">O <span class="accent">campus</span> por trás do curso.</h2>
+    </div>
+    <div class="infra-grid">
+      <div class="sheet infra-card reveal"><span class="crop-bl"></span><span class="crop-br"></span>
+        <div class="n">01</div>
+        <h4>Laboratórios de informática</h4>
+        <p>Ambientes equipados para programação, testes e desenvolvimento em grupo.</p>
+      </div>
+      <div class="sheet infra-card reveal"><span class="crop-bl"></span><span class="crop-br"></span>
+        <div class="n">02</div>
+        <h4>Corpo docente qualificado</h4>
+        <p>Professores mestres e doutores atuantes na área de tecnologia e engenharia de software.</p>
+      </div>
+      <div class="sheet infra-card reveal"><span class="crop-bl"></span><span class="crop-br"></span>
+        <div class="n">03</div>
+        <h4>Biblioteca e acervo digital</h4>
+        <p>Acervo físico e plataformas digitais de apoio ao estudo e à pesquisa.</p>
+      </div>
+      <div class="sheet infra-card reveal"><span class="crop-bl"></span><span class="crop-br"></span>
+        <div class="n">04</div>
+        <h4>Vida acadêmica</h4>
+        <p>Semanas acadêmicas, aulas magnas e eventos que conectam alunos de ADS e Sistemas de Informação.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section id="contato" class="contact-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow scramble-label">Converse com a FEPI</p>
+      <h2 class="section-title font-display">Ainda tem dúvidas? Fale diretamente com a coordenação.</h2>
+      <p class="contact-intro">Preencha seus dados no site oficial do curso para entrar em contato com o coordenador de ADS e receber orientação sobre a formação.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="sheet contact-card reveal"><span class="crop-bl"></span><span class="crop-br"></span>
+        <p class="stack-title">Coordenação do curso</p>
+        <h3>Prof. Me. Thiago Gonçalves de Oliveira</h3>
+        <a href="tel:+553536298400">(35) 3629-8400</a>
+        <a href="mailto:comunicacao@fepi.br">comunicacao@fepi.br</a>
+        <a href="https://fepi.br/cursos/graduacao/analise-desenvolvimento-sistemas/" class="btn-ghost" target="_blank" rel="noopener noreferrer">Preencher meus dados <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="map-frame reveal">
+        <iframe title="Mapa do Centro Universitário de Itajubá - FEPI" src="https://www.google.com/maps?q=Centro+Universit%C3%A1rio+de+Itajub%C3%A1+FEPI,+Av.+Dr.+Ant%C3%B4nio+Braga+Filho,+687,+Itajub%C3%A1+-+MG&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+ 
+<footer>
+  <div class="wrap">
+    <span>© FEPI · Centro Universitário de Itajubá</span>
+    <span>ADS — Tecnologia em Análise e Desenvolvimento de Sistemas</span>
+  </div>
+</footer>
+ 
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  },{threshold:0.15});
+  revealEls.forEach(el=>io.observe(el));
+
+  const scrambleLabels = document.querySelectorAll('.scramble-label, .section-title');
+  const scrambleChars = '01ABCDEF<>[]{}#$%';
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function randomScrambleChar(){
+    return scrambleChars[Math.floor(Math.random() * scrambleChars.length)];
+  }
+
+  function encryptScramble(label){
+    if(label.dataset.timer){
+      window.clearInterval(Number(label.dataset.timer));
+      delete label.dataset.timer;
+    }
+    label.dataset.scrambling = 'false';
+    label.textContent = Array.from(label.dataset.original).map(character=>character === ' ' ? ' ' : randomScrambleChar()).join('');
+  }
+
+  function resolveScramble(label){
+    if(label.dataset.scrambling === 'true') return;
+    label.dataset.scrambling = 'true';
+    const original = label.dataset.original;
+    const originalMarkup = label.dataset.originalMarkup;
+    const characters = Array.from(original);
+    const stepTime = label.classList.contains('section-title') ? 42 : 75;
+    let revealed = 0;
+
+    const render = ()=>{
+      label.textContent = characters.map((character, index)=>{
+        if(character === ' ') return ' ';
+        return index < revealed ? character : randomScrambleChar();
+      }).join('');
+    };
+
+    if(reduceMotion){
+      label.innerHTML = originalMarkup;
+      return;
+    }
+
+    render();
+    const timer = window.setInterval(()=>{
+      revealed += 1;
+      render();
+      if(revealed >= characters.length){
+        window.clearInterval(timer);
+        delete label.dataset.timer;
+        label.innerHTML = originalMarkup;
+      }
+    }, stepTime);
+    label.dataset.timer = String(timer);
+  }
+
+  scrambleLabels.forEach(label=>{
+    label.dataset.original = label.textContent.trim();
+    label.dataset.originalMarkup = label.innerHTML;
+    label.setAttribute('aria-label', label.dataset.original);
+    if(!reduceMotion) encryptScramble(label);
+  });
+
+  const scrambleObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      const isTitle = entry.target.classList.contains('section-title');
+      if(entry.isIntersecting){
+        resolveScramble(entry.target);
+        if(isTitle) scrambleObserver.unobserve(entry.target);
+      } else if(!reduceMotion && !isTitle){
+        encryptScramble(entry.target);
+      }
+    });
+  },{rootMargin:'0px 0px 90px 0px', threshold:0});
+  scrambleLabels.forEach(label=>scrambleObserver.observe(label));
+ 
+  // ---- alternância de tema (claro/escuro) ----
+  const root = document.documentElement;
+  const settingsBtn = document.getElementById('settingsBtn');
+  const settingsPanel = document.getElementById('settingsPanel');
+  const themeSwitch = document.getElementById('themeSwitch');
+  const themeLabel = document.getElementById('themeLabel');
+  const brandLogo = document.getElementById('brandLogo');
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+
+  function closeMobileNav(){
+    mainNav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Abrir menu');
+  }
+
+  navToggle.addEventListener('click', ()=>{
+    const isOpen = mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+    navToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+  });
+
+  mainNav.querySelectorAll('a').forEach(link=>link.addEventListener('click', closeMobileNav));
+  window.addEventListener('resize', ()=>{
+    if(window.innerWidth > 900) closeMobileNav();
+  });
+ 
+  settingsBtn.addEventListener('click', (e)=>{
+    e.stopPropagation();
+    const isOpen = settingsPanel.classList.toggle('open');
+    settingsBtn.setAttribute('aria-expanded', isOpen);
+  });
+ 
+  document.addEventListener('click', (e)=>{
+    if(!settingsPanel.contains(e.target) && e.target !== settingsBtn){
+      settingsPanel.classList.remove('open');
+      settingsBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+ 
+  function applyTheme(isLight){
+    root.setAttribute('data-theme', isLight ? 'light' : 'dark');
+    themeSwitch.setAttribute('aria-checked', isLight);
+    themeLabel.textContent = isLight ? 'Tema claro' : 'Tema escuro';
+    brandLogo.src = isLight ? 'assets/icons/d7c-2021-11-24-11-09-01.png' : 'assets/icons/Logotipo-FEPI.webp';
+  }
+ 
+  themeSwitch.addEventListener('click', ()=>{
+    const isLight = root.getAttribute('data-theme') !== 'light';
+    applyTheme(isLight);
+  });
+ 
+  // tema inicial: escuro por padrão (estilo Chrome dark)
+  applyTheme(false);
+</script>
+ 
+</body>
+</html>
+ 
